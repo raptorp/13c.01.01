@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+/* Resetter */
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+/* Color Properties */
+:root {
+  --color-darker: rgb(48, 48, 48);
+  --color-dark: rgb(64, 64, 64);
+  --color-light: rgb(194, 194, 194);
+  --color-lighter: rgb(255, 255, 255);
+  /* you could add an accent color for CTAs and anchor tags ;-) */
+}
+
+/* Fonts */
+html {
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-darker);
+}
+
+h1 {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 2.9rem;
+  margin: 0 0 1.25rem 0;
+}
+
+h2 {
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  margin: 1.6rem 0 4.5rem 0;
+}
+
+h3 {
+  font-family: Lato;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  margin: 0 0 0.75rem 0;
+}
+
+p {
+  color: var(--color-dark);
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.45rem;
+  margin: 2.3rem 0 2.3rem -0.05rem;
+}
+
+/* UI Elements */
+
+.card_button_negative,
+.card_button_positive {
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+}
+
+.card_button_negative {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border: 1px solid var(--color-dark);
+}
+
+.card_button_positive {
+  background-color: var(--color-darker);
+  color: var(--color-lighter);
+  border: none;
+}
+
+button {
+  display: inline-block;
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--color-darker);
+  color: var(--color-lighter);
+  font-family: Lato;
+  font-size: 0.75rem;
+  border-radius: 0.125rem;
+  margin-left: 0.25rem;
+}
+
+.light_button {
+  background-color: var(--color-lighter);
+  color: var(--color-darker);
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 250px;
+  height: 2rem;
+  padding: 0.5rem;
+  text-align: left;
+  background-color: var(--color-lighter);
+  border-radius: 0.125rem;
+  color: var(--color-dark);
+  border: 1px solid var(--color-light);
+}
+
+/* Menu */
+nav {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-darker);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-dark);
+}
+
+.header_text {
+  width: 40vw;
+  min-width: 300px;
+}
+
+.header_text h1 {
+  color: var(--color-lighter);
+}
+
+.header_text p {
+  color: var(--color-light);
+}
+
+.header_graphics {
+  width: 35vw;
+  height: 35vw;
+  min-width: 300px;
+  min-height: 300px;
+  background-color: var(--color-darker);
+}
+
+/* Sections */
+#intro {
+  display: flex;
+  min-height: 80vh;
+  padding: 0px 15rem;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: var(--color-light);
+}
+
+.intro_text {
+  width: 40vw;
+  min-width: 450px;
+}
+
+.intro_graphics {
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
+  background-color: var(--color-dark);
+}
+
+#cards {
+  min-height: 80vh;
+  padding: 5rem 2rem;
+}
+
+#card_container {
+  display: grid;
+  margin-top: 2rem;
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  justify-items: center;
+}
+
+.card {
+  width: 27vw;
+  background-color: var(--color-light);
+  padding: 1rem;
+  border-radius: 0.125rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card p {
+  margin: 0 0 0.25rem;
+}
+
+.card_button_negative,
+.card_button_positive {
+  height: 2rem;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-family: Lato;
+  font-size: 0.75rem;
+  border-radius: 0.125rem;
+}
+
+.card_button_negative {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  border: 1px solid var(--color-dark);
+}
+
+.card_button_positive {
+  background-color: var(--color-darker);
+  color: var(--color-lighter);
+  border: none;
+}
+
+#info {
+  display: flex;
+  min-height: 80vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light);
+}
+
+.info_text {
+  width: 60vw;
+  min-width: 300px;
+}
+
+#contact {
+  display: flex;
+  min-height: 80vh;
+  padding-left: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 5vh 2rem;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--color-darker);
+}
+
+footer h2,
+footer h3 {
+  color: var(--color-lighter);
+}
+
+footer a {
+  color: var(--color-light);
+}
+
+footer section {
+  display: flex;
+  max-width: 50vw;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer section div {
+  margin: 0px 1rem 1rem 1rem;
+}
